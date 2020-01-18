@@ -18,5 +18,5 @@ exports.updateMention = async (id, data) => {
 };
 
 exports.deleteMention = async id => {
-  await Mentions.findOneAndRemove(id);
+  await Mentions.findByIdAndDelete(id);
 };
